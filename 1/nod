@@ -1,0 +1,20 @@
+while True:
+    A=int(input("Enter number(>=0): "))
+    B=int(input("Enter another number(>=0): "))
+    if A>=0 and B>=0:
+        break
+
+
+
+def nod(A, B):
+    if A==B:
+        return A  #nod
+    else:
+        while not A==B:
+            if A > B:
+                A=A-B
+            else:
+                B=B-A
+        return A
+
+print("NOD =",nod(A, B))
