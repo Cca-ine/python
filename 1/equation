@@ -7,18 +7,24 @@ c=float(input("Enter C: "))
 if a==0 and b==0:
     print("Нет корней.")
 elif a==0:
-    x=-c/b
-    print("x: %0.1f"%(x))
+    if c==0:
+        print("x:0")
+    else:
+        x=-c/b
+        print("x: %0.1f"%(x))
 else:
+    b2=b*b
+    #print("b2: %0.1f"%(b2))
     vr=(b*b)-(4*c*a)
     if vr<0:
         print("Нет действительных корней.")
     else:
         D=sqrt(vr)
+        #print("D: %0.1f"%(D))
         x1=(-b+D)/(2*a)
         x2=(-b-D)/(2*a)
         if x1==x2:
-            print("x1: %0.1f"%(x1))
+            print("x: %0.1f"%(x1))
         else:
             print("x1: %0.1f"%(x1))
             print("x2: %0.1f"%(x2))
