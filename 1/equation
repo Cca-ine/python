@@ -23,6 +23,6 @@ else:
         if x1==x2:
             print("%f"%(x1))
         else:
-            print("%f %f",x1,x2)
+            print(x1,x2)
             
 
