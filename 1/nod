@@ -8,9 +8,13 @@ while True:
 
 def nod(A, B):
     if A==B:
-        return A  #nod
+        return A  
+    elif A==0:
+        return B
+    elif B==0:
+        return A
     else:
-        while not A==B:
+        while A!=B:
             if A > B:
                 A=A-B
             else:
