@@ -1,4 +1,4 @@
-from math import sqrt
+
 print("Equation: ax^2+bx+c=0")
 a=float(input("Enter A: "))
 b=float(input("Enter B: "))
@@ -17,6 +17,7 @@ else:
     if vr<0:
         print(" ")
     else:
+        from math import sqrt
         D=sqrt(vr)
         x1=(-b+D)/(2*a)
         x2=(-b-D)/(2*a)
